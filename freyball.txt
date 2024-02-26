@@ -1,0 +1,89 @@
+Frey ball Algorith
+
+baseline flow
+
+Freyball game-> measured through points and fouls, simple team with more points if points same less fouls win -> played by a team of fritacoles -> each fritacole has attribute 
+-> name, height, integrity, ability and discipline
+
+Basic flow of creation of team 
+
+Structure called freyball game with frey.team1 and frey.team2 
+structure called team with atributes being a fritacole array 
+a fritcole with attribute s name, int height, int integrity, int ability and int discipline
+
+
+Algorithm for backbone structure
+
+structure fritacole 
+{
+    int height 
+    s nameint integrity
+    int ability
+    int discipline
+
+}
+
+structure team 
+{ 
+    fritacole members[]
+    int points;
+    int fouls;
+
+}
+
+structure frey 
+{ 
+    team team1;
+    team team2;
+   
+
+}
+
+input fritcaole(fritcole ein) {
+
+    ein.name = name input
+    ein.height = height input 
+    //and so on and so forth
+
+}
+
+int newscore() {
+    regular scanf input
+}
+
+newmembers(fritacole a[], int no)
+{  
+
+    fritcaole input_frit;
+    
+    for (i<no) {
+  
+   input_fritacole(fritacole *input_frit)
+   a[i] = input frit:
+
+    } 
+
+}
+
+team newteam(int no)
+{
+    team a;
+    a.members[no] = newmembers(a.members, no)
+    give points
+    a.points = newscore()
+    give fouls
+    a.fouls = newscore()
+}
+
+
+
+int main {
+
+frey freygame;
+input("number of memebrs in each team as"  int no)
+freygame.team1 = newteam(no) //retrurn accepted in type team
+team 1 is created 
+inpyt team 2
+freygame.team2 = newteam(no);
+
+}

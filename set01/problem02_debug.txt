@@ -1,0 +1,62 @@
+ gdb problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\c-sets\set01\problem02.exe...done.
+(gdb) b main 
+Breakpoint 1 at 0x40146e: file problem02.c, line 5.
+(gdb) r
+Starting program: C:\c-sets\set01/problem02.exe
+[New Thread 20016.0x3220]
+[New Thread 20016.0x654c]
+
+Breakpoint 1, main () at problem02.c:5
+5           printf("Enter two number:");
+(gdb) 3
+Undefined command: "3".  Try "help".
+(gdb) 4
+Undefined command: "4".  Try "help".
+(gdb) n
+Enter two number:6          scanf("%d %d",&a ,&b);
+(gdb) n
+ 
+n
+8           result = a+b;
+(gdb) n
+9           printf("The sumof %d+%d is %d \n",a,b,result) ;
+(gdb) n
+The sumof 0+12586240 is 12586240
+10          return 0;
+(gdb) n 
+11      }
+(gdb) git add
+Undefined command: "git".  Try "help".
+(gdb) git add .
+Undefined command: "git".  Try "help".
+(gdb) Q
+A debugging session is active.
+
+        Inferior 1 [process 20016] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\c-sets\set01> git add .
+PS C:\c-sets\set01> git commit -m "test"
+[main d7d2552] test
+ 2 files changed, 17 insertions(+), 1 deletion(-)
+PS C:\c-sets\set01> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 636 bytes | 636.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Naveedveed/c-sets
+   28ffe4e..d7d2552  main -> main
