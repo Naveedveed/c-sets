@@ -63,6 +63,7 @@ void output(int n, int result);
 8
 ```
 
+
 ***Output***
 ```
 8 is a composite number.

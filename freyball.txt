@@ -7,9 +7,16 @@ Freyball game-> measured through points and fouls, simple team with more points 
 
 Basic flow of creation of team 
 
-Structure called freyball game with frey.team1 and frey.team2 
-structure called team with atributes being a fritacole array 
+Structure called freyball game with frey.team1 and frey.team2 and no of player in game
+structure called team with atributes being a fritacole array and no of player and points and fouls of each team
 a fritcole with attribute s name, int height, int integrity, int ability and int discipline
+
+specific algo flow
+
+to check if better team won
+a loop to compare the different attribute of each team, per player, use i and a counter, for each team, compare counter at very end, higher value means better team
+if a better team won, that means likely game, else it means luck took over
+
 
 
 Algorithm for backbone structure
@@ -17,7 +24,8 @@ Algorithm for backbone structure
 structure fritacole 
 {
     int height 
-    s nameint integrity
+    s name
+    int integrity
     int ability
     int discipline
 
@@ -25,7 +33,7 @@ structure fritacole
 
 structure team 
 { 
-    fritacole members[]
+    fritacole members[];
     int points;
     int fouls;
 
@@ -35,11 +43,14 @@ structure frey
 { 
     team team1;
     team team2;
+    int no
+    int winner
+    int better_team
    
 
 }
 
-input fritcaole(fritcole ein) {
+input_fritcaole(fritcole ein) {
 
     ein.name = name input
     ein.height = height input 
@@ -58,32 +69,91 @@ newmembers(fritacole a[], int no)
     
     for (i<no) {
   
+options next : 
+
+    a[i] = input_fritacole(a[i])
+
    input_fritacole(fritacole *input_frit)
    a[i] = input frit:
+
+    or a[i] = input_fritacole[a[i]] -> this is tried 
+   try this first --> input_fritacole(a[i]) --> doesnt work, coz a[i] acts as p by val
 
     } 
 
 }
 
 team newteam(int no)
-{
+{   
+    a.no = no;
     team a;
-    a.members[no] = newmembers(a.members, no)
+    a.members[no] = newmembers(a.members, no) also no need to re initialize
+    // not required as a.members already pass by ref 
+    newmembers(a.members, no);
     give points
     a.points = newscore()
     give fouls
     a.fouls = newscore()
+ 
 }
 
 
 
-int main {
+int main { note: main will be written in two parts, simply merge when writting, complete merged main will be provided at last
 
 frey freygame;
-input("number of memebrs in each team as"  int no)
+input("number of memebrs in each team as"  freygame.no)
 freygame.team1 = newteam(no) //retrurn accepted in type team
 team 1 is created 
 inpyt team 2
 freygame.team2 = newteam(no);
+
+}
+
+
+ALGO for better teams winning
+
+int check_better(frey freygame) {
+
+
+for(i<no) {
+
+    /when inputed in scale/
+   int team1_score = freygame.team1.members[i].ability + a[i].discipline....
+   int team2_score = freygame.team2.members[i].ability + a[i].discipline....
+   if (team1_score>)
+   return 1
+   if team2_score>
+   return 2
+   else return 0 for tie
+    }
+
+
+
+}
+
+
+ALGO for winner
+
+int winner_game(freygame)
+
+
+{
+    if(freygame.team1.points > freygame.team2.points)
+    return 1
+    if(freygame.team2.points > freygame.team1.points)
+    return 2
+    if(freygame.team2.points > freygame.team1.points)
+    else 
+    return 0
+
+}
+
+
+ALGO for check validity
+
+int check_valid {
+
+
 
 }
