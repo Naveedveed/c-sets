@@ -26,6 +26,5 @@ int main() {
     int o = compare(x,y,z);
     Output(o);
 
-
 }
 
