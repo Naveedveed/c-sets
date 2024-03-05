@@ -1,0 +1,34 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\c-sets\set01\problem03.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem03.c, line 8.
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: C:\c-sets\set01/problem03.exe
+[New Thread 8124.0x5180]
+[New Thread 8124.0x300]
+
+Breakpoint 1, main () at problem03.c:8
+8           printf("input the two numbers ");
+(gdb) n
+input the two numbers 9     int a = input();
+(gdb) n
+2
+10          int b = input();
+(gdb) n
+3
+11          int sum = add(a,b);
+(gdb) n
+12          output(a,b,sum);
+(gdb) n
+the sum of 2 and 3 is 514       
+(gdb)

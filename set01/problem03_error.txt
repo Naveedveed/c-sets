@@ -1,0 +1,3 @@
+1. missed a the function parameter () for input function
+
+No logical errors found, program runs as expected 
