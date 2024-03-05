@@ -1,0 +1,17 @@
+Error 1 
+gcc -g -O0 problem04.c -o problem04.exe
+problem04.c: In function 'add':
+problem04.c:19:12: warning: 'return' with a value, in function returning void
+     return sum;
+            ^~~
+problem04.c:17:6: note: declared here
+ void add(int a, int b, int *sum) {
+      ^~~
+
+    ERROR IN line
+      void add(int a, int b, int *sum) {
+    *sum = a+b;
+    return sum; due to this statement
+}
+
+NO FURTHER ERROR PROGRAM RUNS AS EXPECTED

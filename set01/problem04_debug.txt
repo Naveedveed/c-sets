@@ -1,0 +1,32 @@
+
+PS C:\c-sets\set01> gdb problem04.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\c-sets\set01\problem04.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem04.c, line 9.
+(gdb) r
+Starting program: C:\c-sets\set01/problem04.exe
+[New Thread 26412.0x9c8]
+
+Breakpoint 1, main () at problem04.c:9
+9           printf("input the two numbers ");
+(gdb) n
+[New Thread 26412.0x15a8]
+input the two numbers 11            input(&a,&b);
+(gdb) n
+2
+3
+13          add(a,b,&sum);
+(gdb) n
+14          output(a,b,sum);
+(gdb) n
+the sum of 2 and 3 is 516       }
+(gdb)
