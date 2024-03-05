@@ -12,7 +12,7 @@ int main() {
     int sum;
     add(a,b,&sum);
     output(a,b,sum);
-
+    
 }
 void add(int a, int b, int *sum) {
     *sum = a+b;

@@ -10,7 +10,7 @@ int main() {
     int b = input();
     int sum = add(a,b);
     output(a,b,sum);
-
+    return 0;
 }
 int add(int a, int b) {
     int sum = a+b;
@@ -25,5 +25,5 @@ int input() {
 
 void output(int a,int b, int sum) {
 
-    printf("the sum of %d and %d is %d",a,b,sum);
+    printf("the sum of %d and %d is %d \n",a,b,sum);
 }
