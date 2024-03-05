@@ -1,0 +1,9 @@
+No errors during compile
+
+Logical error found -->  greatest in 6422300 and 6422296 amd 6422292 is -478635655
+int a, b, c,largest ; to be int a, b, c,largest = 0;
+
+this might fix
+
+The real issue was rintf(" greatest in %d and %d amd %d is %d\n"); in this line
+rintf(" greatest in %d and %d amd %d is %d\n", a,b,c,largest); , forgot to specify the variable

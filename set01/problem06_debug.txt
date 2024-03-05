@@ -1,0 +1,39 @@
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\c-sets\set01\problem06.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4014d8: file problem06.c, line 24.
+(gdb) r
+Starting program: C:\c-sets\set01/problem06.exe
+[New Thread 31056.0x7128]
+[New Thread 31056.0x56b4]
+
+Breakpoint 1, main () at problem06.c:24
+24          printf ("enter 3 numbers");
+(gdb) n
+enter 3 numbers26           input(&a,&b,&c);
+(gdb) n
+2
+1
+3
+27          compare(a,b,c,&largest);
+(gdb) n
+28          output(a,b,c,largest);
+(gdb) n
+ greatest in 6422300 and 6422296 amd 6422292 is -478635655
+29          return 0;
+(gdb)  quit
+A debugging session is active.
+
+        Inferior 1 [process 31056] will be killed.
+
+Quit anyway? (y or n) y
+
+
+Error seems to be undeclaration of variable in the main function
