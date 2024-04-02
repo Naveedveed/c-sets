@@ -1,0 +1,1 @@
+1 error, used %d instead of %f to placehold a float for the output

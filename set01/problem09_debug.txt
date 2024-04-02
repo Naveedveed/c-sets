@@ -1,0 +1,51 @@
+PS C:\c-sets> gdb problem09.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+problem09.exe: No such file or directory.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n])  
+(gdb) n
+The program is not being run.
+(gdb) quit
+PS C:\c-sets> cd set01       
+PS C:\c-sets\set01> gdb problem09.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\c-sets\set01\problem09.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem09.c, line 7.
+(gdb) r 
+Starting program: C:\c-sets\set01/problem09.exe
+[New Thread 29324.0x6aac]
+[New Thread 29324.0x6300]
+
+Breakpoint 1, main () at problem09.c:7
+warning: Source file is more recent than executable.
+7           printf("Enter a number: ");
+(gdb) n
+Enter a number: 8           float n = input();
+(gdb) n
+64
+9           float sqrroot = square_root(n);
+(gdb) n
+10          output(n,sqrroot);
+(gdb) n
+the sqaure root of 64.000000 is 8.00000012      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb)

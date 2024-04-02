@@ -1,0 +1,26 @@
+ printf("enter size of array");
+     ^~~~~~
+problem08.c:7:5: warning: incompatible implicit declaration of built-in function 'printf'
+problem08.c:7:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+problem08.c: In function 'input_array_size':
+problem08.c:18:5: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+     scanf("%d",&a);
+     ^~~~~
+problem08.c:18:5: warning: incompatible implicit declaration of built-in function 'scanf'
+problem08.c:18:5: note: include '<stdio.h>' or provide a declaration of 'scanf'
+problem08.c: In function 'input_array':
+problem08.c:22:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("enter array elements 1 by 1");
+         ^~~~~~
+problem08.c:22:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+problem08.c:24:13: warning: incompatible implicit declaration of built-in function 'scanf'
+             scanf("%d \n", a[i]);
+             ^~~~~
+problem08.c:24:13: note: include '<stdio.h>' or provide a declaration of 'scanf'
+problem08.c: In function 'output':
+problem08.c:38:5: warning: incompatible implicit declaration of built-in function 'printf'
+     printf("the sum of an array of %d elements is %d", n, sum);
+     ^~~~~~
+problem08.c:38:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+
+FORGOT TO ICLUDE STDIO.H
