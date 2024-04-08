@@ -4,11 +4,15 @@ float square_root(float n);
 void output(float n, float sqrroot); 
 
 int main() {
-    printf("Enter a number: ");
+    printf("Enter a number: "); 
     float n = input();
+    if(n==0||n<0) {
+        printf("enter non negative/n");
+        return 1;
+    }
     float sqrroot = square_root(n);
     output(n,sqrroot);
-
+    return 0;
 }
 
 float input() {
