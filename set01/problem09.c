@@ -18,7 +18,7 @@ float input() {
 }
 
 float square_root(float n) {
-    int a[2]= {2,2};
+    int a[2]= {1,1};
     while(n>0) {
         a[1] = 0.5*((a[0])+(n/a[0]));
         if (a[0]==a[1]) {
